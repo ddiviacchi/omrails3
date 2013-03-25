@@ -1,0 +1,32 @@
+/* You can change the font with the below command calling from google fonts or other font sites*/
+/*$baseFontFamily: Oxygen;
+@import url(http://fonts.googleapis.com/css?family=Oxygen);*/
+
+/*Below command changes the button from blue to green*/
+$btnPrimaryBackground: green;
+/* The 2 below commands make the navigation bar fully white*/
+$navbarBackgroundHighlight: white;
+$navbarBackground: white;
+
+@import 'bootstrap';
+
+body {
+	padding-top: 60px;
+}
+
+@import 'bootstrap-responsive';
+
+/*The below item overrides a default bootstrap design by whiting out the shadow on the navigation bar*/
+.navbar-inner {
+	@include box-shadow(none !important);
+	border: 0;
+}
+
+.footer {
+	/* Creates a margin for the footer from the top and makes it gray  */
+	margin-top: 50px; 
+	color: $grayLight;
+	a {
+		color: $gray;
+	}
+}
