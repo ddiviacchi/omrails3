@@ -72,9 +72,9 @@ config.action_mailer.default_url_options = { :host => 'localhost:3000' }
   config.paperclip_defaults = {
     :storage => :s3,
     :s3_credentials => {
-      :bucket => "omrails3",
-      :access_key_id => "AKIAJSEFXRLZRZ2RIIEQ",
-      :secret_access_key => "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"
+      :bucket => ENV['AWS_BUCKET'],
+      :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
+      :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
     }
   }
 end
