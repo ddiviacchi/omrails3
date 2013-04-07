@@ -1,20 +1,7 @@
 <% if user_signed_in? %>
 	<h5> You're Logged In!</h5>
 <% else %>
-<div id="myCarousel" class="carousel slide">
-<!--	<div class="hero-unit"> -->
-     <div class="carousel-inner">
-        <div class="item active">
-          <img src="C:Sites\code\omrails3\app\assets\images\412.jpg" alt="">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Example headline.</h1>
-              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <a class="btn btn-large btn-primary" href="#">Sign up today</a>
-            </div>
-          </div>
-        </div>
-
+	<div class="hero-unit">
 		<h1>Welcome to One Month Rails!</h1>
 		<p>
 			You've found the home page for the
@@ -24,7 +11,6 @@
 		<p>
 			<%= link_to "Sign Up Now!", new_user_registration_path, class: "btn btn-primary btn-large" %>
 		</p>
-			</div>
 	</div>
 <% end %>
 
