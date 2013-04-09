@@ -24,7 +24,7 @@ body {
 
 .footer {
 	/* Creates a margin for the footer from the top and makes it gray  */
-	margin-top: 50px; 
+	margin-top: 5px0px; 
 	color: $grayLight;
 	a {
 		color: $gray;
@@ -54,6 +54,7 @@ body {
 	border-radius: 5px;
 }
 
+/* Project required 5 instead of 50 */
 .description {
-	margin: 10px 0 5px;
+	margin: 10px 0 50px;
 }

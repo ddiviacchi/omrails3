@@ -1,13 +1,15 @@
 <% if user_signed_in? %>
 	<h5> You're Logged In!</h5>
 <% else %>
+<!-- <img src="http://bit.ly/RhrMEn" /> -->
 	<div class="hero-unit">
-		<h1>Welcome to One Month Rails!</h1>
-		<img src="http://bit.ly/RhrMEn" />
+		<h2>Community Heroes!</h2>
 		<p>
-			You've found the home page for the
-			<%= link_to "One Month Rails", "http://onemonthrails.com"  %>
-			application. 
+			Has someone done soemthing remarkable in your community ? Do you know someone who deserves to be recognized? 
+			<!-- <%= link_to "One Month Rails", "http://onemonthrails.com"  %>  -->
+		</p>
+		<p>
+			Post your local heroes by uploading a picture, link or story about a local hero so that they get the recognition they deserve.
 		</p>
 		<p>
 			<%= link_to "Sign Up Now!", new_user_registration_path, class: "btn btn-primary btn-large" %>
